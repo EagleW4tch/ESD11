@@ -14,7 +14,7 @@
 import socket
 import subprocess
 
-ClientIP = "192.168.159.129"
+ClientIP = "10.94.73.11"
 ClientPort = 443
 PacketSize = 2048
 
