@@ -70,9 +70,20 @@ from scapy.all import *
 
 # Fenêtre principale
 mainWindow = tkinter.Tk()
+mainWindow.title("Arp Poisonning")
 
 mainFrame = tkinter.Frame(mainWindow, width=800, height=800, borderwidth=1)
 mainFrame.pack(fill='both')
+
+# Menu bar
+menuBar = tkinter.Menu(mainWindow)
+
+menuFile = tkinter.Menu(menuBar, tearoff=0)
+menuFile.add_command(label="Quit", command=mainWindow.quit)
+
+menuBar.add_cascade(label="Fichier", menu=menuFile)
+
+mainWindow.config(menu=menuBar)
 
 # Target Side
 targetFrame = tkinter.Frame(mainFrame, width=300, height=300, borderwidth=1)
